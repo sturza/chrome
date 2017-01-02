@@ -10,7 +10,7 @@ var greeting = "doamnele ajuta!";
 function setTimeAndDate(timeElement, dateElement) {
     var date = new Date();
     var minutes = (date.getMinutes() < 10 ? '0' : '') + date.getMinutes();
-    
+    var a = 4;
     var time = date.getHours() + ":" + minutes;
     var date = days[date.getDay()] + ", " + months[date.getMonth()] + " " + date.getDate() + " " + date.getFullYear();
     
@@ -19,6 +19,7 @@ function setTimeAndDate(timeElement, dateElement) {
 }
 
 console.log(greeting);
+
 
 document.addEventListener("DOMContentLoaded", function(dcle) {
     var timeElement = document.getElementById(timeId);
