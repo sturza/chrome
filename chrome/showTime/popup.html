@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>showTime</title>
+
+	<script src="popup.js"></script>
+
+	<style>
+		body {
+			width: 300px;
+		}
+
+		h1, h2 {
+			vertical-align: middle;
+			text-align: center;
+		}
+
+		h2 {
+			background-color: #777;
+		}
+
+		.unselectable {
+			-webkit-user-select:none;
+			cursor: default;
+		}
+	</style>
+</head>
+<body>
+    <div class="unselectable">
+    	<h1 class="empty"></h1>
+    	<h1 id="time"></h1>
+    	<h2 id="date"></h2>
+    </div>
+</body>
+</html>

@@ -12,16 +12,15 @@ function setTimeAndDate(timeElement, dateElement) {
     var minutes = (date.getMinutes() < 10 ? '0' : '') + date.getMinutes();
     
     var time = date.getHours() + ":" + minutes;
-    var date = days[date.getDay()] + ", " + months[date.getMonth()] + " " + date.getDate() + "" + date.getFullYear();
+    var date = days[date.getDay()] + ", " + months[date.getMonth()] + " " + date.getDate() + " " + date.getFullYear();
     
     timeElement.innerHTML = time;
     dateElement.innerHTML = date;
 }
 
-
 console.log(greeting);
 
-document.addEventListener(DOMContentLoaded, function(dcle)) {
+document.addEventListener("DOMContentLoaded", function(dcle) {
     var timeElement = document.getElementById(timeId);
     var dateElement = document.getElementById(dateId);
     setTimeAndDate(timeElement, dateElement);
